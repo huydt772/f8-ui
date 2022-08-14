@@ -1,10 +1,10 @@
 export const HomeIcon = ({ className }) => (
     <svg
         className={className}
-        ariaHidden="true"
+        aria-hidden="true"
         focusable="false"
-        dataPrefix="fas"
-        dataIcon="house"
+        dataprefix="fas"
+        dataicon="house"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 576 512"
@@ -19,10 +19,10 @@ export const HomeIcon = ({ className }) => (
 export const RoadIcon = ({ className }) => (
     <svg
         className={className}
-        ariaHidden="true"
+        aria-hidden="true"
         focusable="false"
-        dataPrefix="fas"
-        dataIcon="road"
+        dataprefix="fas"
+        dataicon="road"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 576 512"
@@ -37,10 +37,10 @@ export const RoadIcon = ({ className }) => (
 export const LightBulbIcon = ({ className }) => (
     <svg
         className={className}
-        ariaHidden="true"
+        aria-hidden="true"
         focusable="false"
-        dataPrefix="fas"
-        dataIcon="lightbulb"
+        dataprefix="fas"
+        dataicon="lightbulb"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 384 512"
@@ -55,10 +55,10 @@ export const LightBulbIcon = ({ className }) => (
 export const NewsPaperIcon = ({ className }) => (
     <svg
         className={className}
-        ariaHidden="true"
+        aria-hidden="true"
         focusable="false"
-        dataPrefix="fas"
-        dataIcon="newspaper"
+        dataprefix="fas"
+        dataicon="newspaper"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
@@ -70,13 +70,15 @@ export const NewsPaperIcon = ({ className }) => (
     </svg>
 );
 
-export const BellIcon = ({ className }) => (
+export const BellIcon = ({ className, width, height = '1.8rem' }) => (
     <svg
         className={className}
-        ariaHidden="true"
+        width={width}
+        height={height}
+        aria-hidden="true"
         focusable="false"
-        dataPrefix="fas"
-        dataIcon="bell"
+        dataprefix="fas"
+        dataicon="bell"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512"
@@ -91,10 +93,10 @@ export const BellIcon = ({ className }) => (
 export const UsersIcon = ({ className }) => (
     <svg
         className={className}
-        ariaHidden="true"
+        aria-hidden="true"
         focusable="false"
-        dataPrefix="fas"
-        dataIcon="users"
+        dataprefix="fas"
+        dataicon="users"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 640 512"
@@ -109,10 +111,10 @@ export const UsersIcon = ({ className }) => (
 export const PlusIcon = ({ className }) => (
     <svg
         className={className}
-        ariaHidden="true"
+        aria-hidden="true"
         focusable="false"
-        dataPrefix="fas"
-        dataIcon="plus"
+        dataprefix="fas"
+        dataicon="plus"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512"
@@ -127,10 +129,10 @@ export const PlusIcon = ({ className }) => (
 export const ChevronRight = ({ className }) => (
     <svg
         className={className}
-        ariaHidden="true"
+        aria-hidden="true"
         focusable="false"
-        dataPrefix="fas"
-        dataIcon="chevron-right"
+        dataprefix="fas"
+        dataicon="chevron-right"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 320 512"
@@ -138,6 +140,26 @@ export const ChevronRight = ({ className }) => (
         <path
             fill="currentColor"
             d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"
+        ></path>
+    </svg>
+);
+
+export const ClearIcon = ({ className, width, height = '1.4rem' }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        aria-hidden="true"
+        focusable="false"
+        dataprefix="fas"
+        dataicon="xmark"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 320 512"
+    >
+        <path
+            fill="currentColor"
+            d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
         ></path>
     </svg>
 );
