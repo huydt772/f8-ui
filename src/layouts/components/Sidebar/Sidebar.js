@@ -1,5 +1,11 @@
+import { SidebarStyle } from './Sidebar.style';
+
 function Sidebar() {
-    return <h2>Sidebar</h2>;
+    return (
+        <SidebarStyle>
+            <h2>Sidebar</h2>
+        </SidebarStyle>
+    );
 }
 
 export default Sidebar;
