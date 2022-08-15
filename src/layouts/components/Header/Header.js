@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import images from '~/assets/images';
 import { BellIcon, ClearIcon } from '~/components/Icons';
@@ -19,12 +19,19 @@ import {
 function Header() {
     const [searchValue, setSearchValue] = useState('');
 
+    const inputRef = useRef();
+
     const handleChange = (e) => {
         const searchValue = e.target.value;
 
         if (!searchValue.startsWith(' ')) {
             setSearchValue(searchValue);
         }
+    };
+
+    const handleClear = () => {
+        setSearchValue('');
+        inputRef.current.focus();
     };
     return (
         <HeaderStyle>
@@ -38,15 +45,18 @@ function Header() {
             <Search>
                 <SearchIcon />
                 <Input
+                    ref={inputRef}
                     value={searchValue}
                     type="text"
                     placeholder="Tìm kiếm khóa học, bài viết, video, ..."
                     spellCheck="false"
                     onChange={handleChange}
                 />
-                <ClearBtn>
-                    <ClearIcon />
-                </ClearBtn>
+                {searchValue && (
+                    <ClearBtn onClick={handleClear}>
+                        <ClearIcon />
+                    </ClearBtn>
+                )}
             </Search>
 
             <Actions>

@@ -1,6 +1,8 @@
-export const HomeIcon = ({ className }) => (
+export const HomeIcon = ({ className, width, height = '1.8rem' }) => (
     <svg
         className={className}
+        width={width}
+        height={height}
         aria-hidden="true"
         focusable="false"
         dataprefix="fas"
@@ -16,9 +18,11 @@ export const HomeIcon = ({ className }) => (
     </svg>
 );
 
-export const RoadIcon = ({ className }) => (
+export const RoadIcon = ({ className, width, height = '1.8rem' }) => (
     <svg
         className={className}
+        width={width}
+        height={height}
         aria-hidden="true"
         focusable="false"
         dataprefix="fas"
@@ -34,9 +38,11 @@ export const RoadIcon = ({ className }) => (
     </svg>
 );
 
-export const LightBulbIcon = ({ className }) => (
+export const LightBulbIcon = ({ className, width, height = '1.8rem' }) => (
     <svg
         className={className}
+        width={width}
+        height={height}
         aria-hidden="true"
         focusable="false"
         dataprefix="fas"
@@ -52,9 +58,11 @@ export const LightBulbIcon = ({ className }) => (
     </svg>
 );
 
-export const NewsPaperIcon = ({ className }) => (
+export const NewsPaperIcon = ({ className, width = '1.8rem', height = '1.8rem' }) => (
     <svg
         className={className}
+        width={width}
+        height={height}
         aria-hidden="true"
         focusable="false"
         dataprefix="fas"
@@ -108,9 +116,11 @@ export const UsersIcon = ({ className }) => (
     </svg>
 );
 
-export const PlusIcon = ({ className }) => (
+export const PlusIcon = ({ className, width = '1.4rem', height = '1.6rem' }) => (
     <svg
         className={className}
+        width={width}
+        height={height}
         aria-hidden="true"
         focusable="false"
         dataprefix="fas"
