@@ -1,0 +1,38 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.heading {
+    border: none;
+    padding: 8px;
+    margin-right: 16px;
+    font-weight: 600;
+    font-size: 1.4rem;
+
+    color: #333;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    padding: 8px;
+    color: #707070;
+
+    &:hover {
+        color: #333;
+    }
+}
+
+.avatar {
+    border-radius: 100rem;
+    width: 28px;
+    height: 28px;
+    margin-left: 12px;
+    object-fit: cover;
+    cursor: pointer;
+}

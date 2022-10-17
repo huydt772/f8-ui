@@ -1,20 +1,13 @@
-import { useState, useRef } from 'react';
+import classNames from 'classnames/bind';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import images from '~/assets/images';
-import { BellIcon, ClearIcon } from '~/components/Icons';
-import {
-    HeaderStyle,
-    Logo,
-    Heading,
-    Search,
-    SearchIcon,
-    Input,
-    Actions,
-    MyLearn,
-    ActionBtn,
-    Avatar,
-    ClearBtn,
-} from './Header.style';
+import { ClearIcon, SearchIcon } from '~/components/Icons';
+import HeaderActions from '../HeaderActions';
+import styles from './Header.module.scss';
+
+const cx = classNames.bind(styles);
 
 function Header() {
     const [searchValue, setSearchValue] = useState('');
@@ -33,18 +26,23 @@ function Header() {
         setSearchValue('');
         inputRef.current.focus();
     };
+
     return (
-        <HeaderStyle>
-            <Logo>
+        <header className={cx('wrapper')}>
+            <div className={cx('logo')}>
                 <Link to="/">
                     <img src={images.logo} alt="F8" />
                 </Link>
-                <Heading>Học Lập Trình Để Đi Làm</Heading>
-            </Logo>
+                <h4 className={cx('heading')}>Học Lập Trình Để Đi Làm</h4>
+            </div>
 
-            <Search>
-                <SearchIcon />
-                <Input
+            <div className={cx('search')}>
+                <span className={cx('search-icon')}>
+                    <SearchIcon />
+                </span>
+
+                <input
+                    className={cx('input')}
                     ref={inputRef}
                     value={searchValue}
                     type="text"
@@ -53,20 +51,14 @@ function Header() {
                     onChange={handleChange}
                 />
                 {searchValue && (
-                    <ClearBtn onClick={handleClear}>
+                    <button className={cx('clear-btn')} onClick={handleClear}>
                         <ClearIcon />
-                    </ClearBtn>
+                    </button>
                 )}
-            </Search>
+            </div>
 
-            <Actions>
-                <MyLearn>Khóa học của tôi</MyLearn>
-                <ActionBtn>
-                    <BellIcon />
-                </ActionBtn>
-                <Avatar src={images.avatar} alt="Avatar" />
-            </Actions>
-        </HeaderStyle>
+            <HeaderActions />
+        </header>
     );
 }
 

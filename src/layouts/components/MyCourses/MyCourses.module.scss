@@ -1,0 +1,85 @@
+.wrapper {
+    width: 410px;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    padding: 14px 20px 16px;
+
+    .heading {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+}
+
+.content {
+    max-height: 68vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: 12px;
+}
+
+.course-item {
+    display: flex;
+    margin: 0 8px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.05);
+    }
+
+    .course-thumb-link {
+        flex-shrink: 0;
+    }
+
+    .course-thumb {
+        border-radius: 8px;
+        line-height: 67px;
+        min-height: 67px;
+        width: 120px;
+    }
+
+    .course-info {
+        flex: 1;
+        margin-left: 12px;
+    }
+
+    .course-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 6px 0 0;
+
+        a {
+            color: #333;
+        }
+    }
+
+    .last-completed {
+        color: var(--text-secondary-color);
+        font-size: 1.2rem;
+        margin: 4px 0 0;
+    }
+
+    .progress {
+        background-color: #ddd;
+        border-radius: 4px;
+        height: 8px;
+        margin-top: 8px;
+        overflow: hidden;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: var(--primary-color);
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: var(--progress);
+            transition: width 1s ease;
+        }
+    }
+}
