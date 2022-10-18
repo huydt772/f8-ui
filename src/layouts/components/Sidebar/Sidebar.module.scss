@@ -1,15 +1,12 @@
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
-
-export const SidebarStyle = styled.aside`
+.wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: var(--sidebar-width);
     padding-top: 8px;
-`;
+}
 
-export const CreateButton = styled.div`
+.create-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,16 +27,16 @@ export const CreateButton = styled.div`
     &:hover svg {
         transform: scale(1.4);
     }
-`;
+}
 
-export const SidebarList = styled.div`
+.list {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px 0;
-`;
+}
 
-export const ItemLink = styled(NavLink)`
+.item-link {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,10 +61,10 @@ export const ItemLink = styled(NavLink)`
         color: #1a1a1a;
         background-color: #e8ebed;
     }
-`;
 
-export const Title = styled.span`
-    margin-top: 6px;
-    font-size: 1.1rem;
-    font-weight: 600;
-`;
+    .title {
+        margin-top: 6px;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+}

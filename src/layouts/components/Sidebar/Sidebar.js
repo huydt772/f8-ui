@@ -1,14 +1,17 @@
-import { HomeIcon, LightBulbIcon, NewsPaperIcon, RoadIcon, PlusIcon } from '~/components/Icons';
-import SidebarList from './List';
+import classNames from 'classnames/bind';
+import { HomeIcon, LightBulbIcon, NewsPaperIcon, PlusIcon, RoadIcon } from '~/components/Icons';
 import SidebarItem from './Item';
-import { SidebarStyle, CreateButton } from './Sidebar.style';
+import SidebarList from './List';
+import styles from './Sidebar.module.scss';
+
+const cx = classNames.bind(styles);
 
 function Sidebar() {
     return (
-        <SidebarStyle>
-            <CreateButton>
+        <aside className={cx('wrapper')}>
+            <div className={cx('create-btn')}>
                 <PlusIcon />
-            </CreateButton>
+            </div>
 
             <SidebarList>
                 <SidebarItem to="/" icon={<HomeIcon />}>
@@ -24,7 +27,7 @@ function Sidebar() {
                     Blog
                 </SidebarItem>
             </SidebarList>
-        </SidebarStyle>
+        </aside>
     );
 }
 
