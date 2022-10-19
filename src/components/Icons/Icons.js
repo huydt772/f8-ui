@@ -1,3 +1,5 @@
+import { forwardRef } from 'react';
+
 export const HomeIcon = ({ className, width, height = '1.8rem' }) => (
     <svg
         className={className}
@@ -78,8 +80,9 @@ export const NewsPaperIcon = ({ className, width = '1.8rem', height = '1.8rem' }
     </svg>
 );
 
-export const BellIcon = ({ className, width, height = '1.8rem' }) => (
+export const BellIcon = forwardRef(({ className, width, height = '1.8rem' }, ref) => (
     <svg
+        ref={ref}
         className={className}
         width={width}
         height={height}
@@ -96,7 +99,7 @@ export const BellIcon = ({ className, width, height = '1.8rem' }) => (
             d="M256 32V51.2C329 66.03 384 130.6 384 208V226.8C384 273.9 401.3 319.2 432.5 354.4L439.9 362.7C448.3 372.2 450.4 385.6 445.2 397.1C440 408.6 428.6 416 416 416H32C19.4 416 7.971 408.6 2.809 397.1C-2.353 385.6-.2883 372.2 8.084 362.7L15.5 354.4C46.74 319.2 64 273.9 64 226.8V208C64 130.6 118.1 66.03 192 51.2V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32H256zM224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512z"
         ></path>
     </svg>
-);
+));
 
 export const UsersIcon = ({ className }) => (
     <svg
@@ -187,5 +190,25 @@ export const SearchIcon = ({ className, width = '1.8rem', height = '1.8rem' }) =
                 fill="#444"
             />
         </g>
+    </svg>
+);
+
+export const EllipsisIcon = ({ className, width, height = '1.8rem' }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        aria-hidden="true"
+        focusable="false"
+        dataprefix="fas"
+        dataicon="ellipsis"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+    >
+        <path
+            fill="currentColor"
+            d="M120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200C94.93 200 120 225.1 120 256zM280 256C280 286.9 254.9 312 224 312C193.1 312 168 286.9 168 256C168 225.1 193.1 200 224 200C254.9 200 280 225.1 280 256zM328 256C328 225.1 353.1 200 384 200C414.9 200 440 225.1 440 256C440 286.9 414.9 312 384 312C353.1 312 328 286.9 328 256z"
+        ></path>
     </svg>
 );
