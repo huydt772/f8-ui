@@ -212,3 +212,63 @@ export const EllipsisIcon = ({ className, width, height = '1.8rem' }) => (
         ></path>
     </svg>
 );
+
+export const MagnifyingGlass = ({ className, width = '1.4rem', height = '1.4rem' }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        aria-hidden="true"
+        focusable="false"
+        dataprefix="fas"
+        dataicon="magnifying-glass"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+    >
+        <path
+            fill="currentColor"
+            d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"
+        ></path>
+    </svg>
+);
+
+export const PenIcon = ({ className, width = '1.6rem', height = '1.6rem' }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        aria-hidden="true"
+        focusable="false"
+        dataprefix="fas"
+        dataicon="pen"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+    >
+        <path
+            fill="currentColor"
+            d="M362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32zM421.7 220.3L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3z"
+        ></path>
+    </svg>
+);
+
+export const CheckIcon = ({ className, width, height = '1.4rem' }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        aria-hidden="true"
+        focusable="false"
+        dataprefix="fas"
+        dataicon="check"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+    >
+        <path
+            fill="currentColor"
+            d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"
+        ></path>
+    </svg>
+);

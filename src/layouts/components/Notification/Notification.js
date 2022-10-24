@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import { EllipsisIcon } from '~/components/Icons';
+import { CheckIcon, EllipsisIcon } from '~/components/Icons';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './Notification.module.scss';
 import NotiItem from './NotiItem';
@@ -22,9 +22,25 @@ function Notification({ children }) {
                     <PopperWrapper>
                         <header className={cx('header')}>
                             <h6>Thông báo</h6>
-                            <span className={cx('mark-read-all')}>
-                                <EllipsisIcon />
-                            </span>
+
+                            <Tippy
+                                trigger="click"
+                                interactive
+                                placement="bottom-end"
+                                offset={[10, 14]}
+                                render={(attrs) => (
+                                    <ul className={cx('wrapper-option')} tabIndex="-1" {...attrs}>
+                                        <li className={cx('item-option')}>
+                                            <CheckIcon />
+                                            <p>Đánh dấu tất cả đã đọc</p>
+                                        </li>
+                                    </ul>
+                                )}
+                            >
+                                <span className={cx('mark-read-all')}>
+                                    <EllipsisIcon />
+                                </span>
+                            </Tippy>
                         </header>
                         <div className={cx('content')}>
                             <NotiItem />

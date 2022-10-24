@@ -13,9 +13,9 @@ function HeaderActions() {
     return (
         <div className={cx('wrapper')}>
             <MyCourses>
-                <div className={cx('heading')}>Khóa học của tôi</div>
+                <div className={cx('my-courses-btn')}>Khóa học của tôi</div>
             </MyCourses>
-            <div className={cx('action-btn')}>
+            <div className={cx('notify-btn')}>
                 <Notification>
                     <BellIcon />
                 </Notification>
