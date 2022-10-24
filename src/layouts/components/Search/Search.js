@@ -1,8 +1,9 @@
 import Tippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 import { useRef, useState } from 'react';
-
 import { Link } from 'react-router-dom';
+
+import Image from '~/components/Image';
 import { ClearIcon, MagnifyingGlass, SearchIcon } from '~/components/Icons';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './Search.module.scss';
@@ -47,12 +48,12 @@ function Search() {
                         </div>
 
                         <Link className={cx('search-item')} to="/courses/reactjs">
-                            <img src="https://files.fullstack.edu.vn/f8-prod/courses/13/13.png" alt="ReactJS" />
+                            <Image src="https://files.fullstack.edu.vn/f8-prod/courses/13/13.png" alt="ReactJS" />
                             <span>Xây Dựng Website với ReactJS</span>
                         </Link>
 
                         <Link className={cx('search-item')} to="/courses/reactjs">
-                            <img src="https://files.fullstack.edu.vn/f8-prod/courses/13/13.png" alt="ReactJS" />
+                            <Image src="https://files.fullstack.edu.vn/f8-prod/courses/13/13.png" alt="ReactJS" />
                             <span>Xây Dựng Website với ReactJS</span>
                         </Link>
                     </div>

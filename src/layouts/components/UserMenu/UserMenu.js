@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import Tippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 
+import Image from '~/components/Image';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import styles from './UserMenu.module.scss';
 import { Link } from 'react-router-dom';
@@ -18,7 +19,7 @@ function UserMenu({ children }) {
                 <PopperWrapper>
                     <ul className={cx('wrapper')} tabIndex="-1" {...attrs}>
                         <div className={cx('user')}>
-                            <img
+                            <Image
                                 className={cx('avatar')}
                                 src="https://files.fullstack.edu.vn/f8-prod/user_avatars/22972/62f8aceb34557.jpg"
                                 alt="Huy"

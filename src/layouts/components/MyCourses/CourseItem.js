@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { Link } from 'react-router-dom';
+import Image from '~/components/Image';
 import styles from './MyCourses.module.scss';
 
 const cx = classNames.bind(styles);
@@ -10,7 +11,7 @@ function CourseItem() {
     return (
         <div className={cx('course-item')}>
             <Link className={cx('course-thumb-link')} to="/learning/reactjs">
-                <img
+                <Image
                     className={cx('course-thumb')}
                     src="https://files.fullstack.edu.vn/f8-prod/courses/13/13.png"
                     alt="ReactJS"

@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-
+import Image from '~/components/Image';
 import images from '~/assets/images';
 import { BellIcon } from '~/components/Icons';
 import MyCourses from '../MyCourses';
@@ -21,7 +21,7 @@ function HeaderActions() {
                 </Notification>
             </div>
             <UserMenu>
-                <img className={cx('avatar')} src={images.avatar} alt="Avatar" />
+                <Image className={cx('avatar')} src={images.avatar} alt="Avatar" />
             </UserMenu>
         </div>
     );
