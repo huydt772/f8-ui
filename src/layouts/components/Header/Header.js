@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 
+import config from '~/config';
 import Image from '~/components/Image';
 import images from '~/assets/images';
 import HeaderActions from '../HeaderActions';
@@ -13,7 +14,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('logo')}>
-                <Link to="/">
+                <Link to={config.routes.home}>
                     <Image src={images.logo} alt="F8" />
                 </Link>
                 <h4 className={cx('heading')}>Học Lập Trình Để Đi Làm</h4>

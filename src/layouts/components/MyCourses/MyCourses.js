@@ -22,14 +22,21 @@ function MyCourses({ children }) {
                         </header>
 
                         <div className={cx('content')}>
-                            <CourseItem />
-                            <CourseItem />
-                            <CourseItem />
-                            <CourseItem />
-                            <CourseItem />
-                            <CourseItem />
-                            <CourseItem />
-                            <CourseItem />
+                            <CourseItem
+                                thumb="https://files.fullstack.edu.vn/f8-prod/courses/13/13.png"
+                                title="Xây Dựng Website với ReactJS"
+                                lastCompleted="Học cách đây 10 ngày trước"
+                            />
+                            <CourseItem
+                                thumb="https://files.fullstack.edu.vn/f8-prod/courses/12.png"
+                                title="Lập Trình JavaScript Nâng Cao"
+                                lastCompleted="Học cách đây 3 tháng trước"
+                            />
+                            <CourseItem
+                                thumb="https://files.fullstack.edu.vn/f8-prod/courses/1.png"
+                                title="Lập Trình JavaScript Cơ Bản"
+                                lastCompleted="Học cách đây 4 tháng trước"
+                            />
                         </div>
                     </PopperWrapper>
                 </div>

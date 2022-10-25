@@ -43,13 +43,25 @@ function Notification({ children }) {
                             </Tippy>
                         </header>
                         <div className={cx('content')}>
-                            <NotiItem />
-                            <NotiItem />
-                            <NotiItem />
-                            <NotiItem />
-                            <NotiItem />
-                            <NotiItem />
-                            <NotiItem />
+                            <NotiItem
+                                avatar="https://files.fullstack.edu.vn/f8-prod/user_avatars/1/623d4b2d95cec.png"
+                                name="Sơn Đặng"
+                                content="đã nhắc tới bạn trong một bình luận."
+                                createdTime="23 ngày trước"
+                            />
+                            <NotiItem
+                                avatar="https://files.fullstack.edu.vn/f8-prod/user_photos/195084/625f927d21816.jpg"
+                                name="Vương Dương"
+                                content="đã nhắc tới bạn trong một bình luận."
+                                createdTime="20 ngày trước"
+                            />
+
+                            <NotiItem
+                                avatar="https://files.fullstack.edu.vn/f8-prod/user_avatars/31668/627e2ec8a6bf5.jpg"
+                                name="Hoàng Đăng Khoa"
+                                content="đã nhắc tới bạn trong một bình luận."
+                                createdTime="19 ngày trước"
+                            />
 
                             <Link to="/notifications" className={cx('see-all')}>
                                 <p>Xem tất cả thông báo</p>

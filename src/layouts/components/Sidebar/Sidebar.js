@@ -3,6 +3,7 @@ import classNames from 'classnames/bind';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import config from '~/config';
 import { HomeIcon, LightBulbIcon, NewsPaperIcon, PenIcon, PlusIcon, RoadIcon } from '~/components/Icons';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import SidebarItem from './Item';
@@ -53,16 +54,16 @@ function Sidebar() {
             </HeadlessTippy>
 
             <SidebarList>
-                <SidebarItem to="/" icon={<HomeIcon />}>
+                <SidebarItem to={config.routes.home} icon={<HomeIcon />}>
                     Home
                 </SidebarItem>
-                <SidebarItem to="/learning-paths" icon={<RoadIcon />}>
+                <SidebarItem to={config.routes.learningPaths} icon={<RoadIcon />}>
                     Lộ trình
                 </SidebarItem>
-                <SidebarItem to="/courses" icon={<LightBulbIcon />}>
+                <SidebarItem to={config.routes.courses} icon={<LightBulbIcon />}>
                     Học
                 </SidebarItem>
-                <SidebarItem to="/blog" icon={<NewsPaperIcon />}>
+                <SidebarItem to={config.routes.blog} icon={<NewsPaperIcon />}>
                     Blog
                 </SidebarItem>
             </SidebarList>
