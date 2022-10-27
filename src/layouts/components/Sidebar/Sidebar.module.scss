@@ -1,5 +1,13 @@
 .wrapper {
+    position: sticky;
+    position: -webkit-sticky;
+    top: var(--header-height);
+    left: 0;
+    background-color: var(--white-color);
+    z-index: 8;
+
     display: flex;
+    align-self: flex-start;
     flex-direction: column;
     align-items: center;
     width: var(--sidebar-width);

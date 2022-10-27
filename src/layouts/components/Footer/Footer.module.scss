@@ -1,0 +1,123 @@
+.wrapper {
+    background-color: #181821;
+    color: #a9b3bb;
+    overflow: hidden;
+    padding: 68px 0 40px;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+
+    .column-top {
+        align-items: center;
+        display: flex;
+    }
+
+    .top-logo {
+        border-radius: 8px;
+        height: 38px;
+        margin-right: 10px;
+        width: 38px;
+    }
+
+    .top-slogan {
+        color: var(--white-color);
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin: 13.28px 0 13.28px 0;
+    }
+
+    .contact-list {
+        position: relative;
+        color: #a9b3bb;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        margin: 14px 0 14px 0;
+
+        a {
+            color: #a9b3bb;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .dmca {
+        margin-top: 34px;
+    }
+
+    .heading {
+        color: var(--white-color);
+        font-size: 1.8rem;
+        line-height: 1.6;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 14.94px 0 14.94px 0;
+    }
+
+    .list {
+        list-style-type: none;
+        margin: 10px 0 10px 0;
+
+        li {
+            position: relative;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            margin-bottom: 8px;
+        }
+
+        a {
+            position: relative;
+            color: #a9b3bb;
+            cursor: pointer;
+            transition: 0.3s ease;
+
+            &:hover {
+                color: var(--white-color);
+            }
+        }
+    }
+}
+
+.bottom {
+    display: flex;
+    align-items: baseline;
+    margin-top: 48px;
+
+    .copyright {
+        font-size: 1.4rem;
+        margin: 14px 0 14px 0;
+    }
+
+    .social-list {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .youtube {
+        color: #eb2c3b;
+    }
+
+    .facebook {
+        color: #4867aa;
+    }
+
+    .tiktok {
+        color: #ccc;
+    }
+
+    .social-item {
+        display: flex;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        & + .social-item {
+            margin-left: 16px;
+        }
+    }
+}

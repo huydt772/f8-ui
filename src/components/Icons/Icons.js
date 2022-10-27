@@ -101,9 +101,11 @@ export const BellIcon = forwardRef(({ className, width, height = '1.8rem' }, ref
     </svg>
 ));
 
-export const UsersIcon = ({ className }) => (
+export const UsersIcon = ({ className, width, height = '1.4rem' }) => (
     <svg
         className={className}
+        width={width}
+        height={height}
         aria-hidden="true"
         focusable="false"
         dataprefix="fas"
@@ -139,9 +141,11 @@ export const PlusIcon = ({ className, width = '1.4rem', height = '1.6rem' }) => 
     </svg>
 );
 
-export const ChevronRight = ({ className }) => (
+export const ChevronRight = ({ className, width = '0.75rem', height = '1.2rem' }) => (
     <svg
         className={className}
+        width={width}
+        height={height}
         aria-hidden="true"
         focusable="false"
         dataprefix="fas"
@@ -153,6 +157,26 @@ export const ChevronRight = ({ className }) => (
         <path
             fill="currentColor"
             d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"
+        ></path>
+    </svg>
+);
+
+export const ChevronLeft = ({ className, width = '0.75rem', height = '1.2rem' }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        aria-hidden="true"
+        focusable="false"
+        dataprefix="fas"
+        dataicon="chevron-left"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 320 512"
+    >
+        <path
+            fill="currentColor"
+            d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z"
         ></path>
     </svg>
 );
@@ -269,6 +293,66 @@ export const CheckIcon = ({ className, width, height = '1.4rem' }) => (
         <path
             fill="currentColor"
             d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"
+        ></path>
+    </svg>
+);
+
+export const YoutubeIcon = ({ className, width = '2.8rem', height = '3.2rem' }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        aria-hidden="true"
+        focusable="false"
+        dataprefix="fab"
+        dataicon="youtube-square"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+    >
+        <path
+            fill="currentColor"
+            d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"
+        ></path>
+    </svg>
+);
+
+export const FacebookIcon = ({ className, width = '2.8rem', height = '3.2rem' }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        aria-hidden="true"
+        focusable="false"
+        dataprefix="fab"
+        dataicon="facebook-square"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+    >
+        <path
+            fill="currentColor"
+            d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.3V327.7h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0 -48-48z"
+        ></path>
+    </svg>
+);
+
+export const TiktokIcon = ({ className, width = '2.8rem', height = '3.2rem' }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        aria-hidden="true"
+        focusable="false"
+        dataprefix="fab"
+        dataicon="tiktok"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+    >
+        <path
+            fill="currentColor"
+            d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.25V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.2 121.2 0 0 0 1.86 22.17h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.14z"
         ></path>
     </svg>
 );

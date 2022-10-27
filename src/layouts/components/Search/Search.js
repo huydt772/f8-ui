@@ -57,7 +57,7 @@ function Search() {
     );
 
     return (
-        <Tippy visible={true} interactive render={searchResult}>
+        <Tippy visible={false} interactive render={searchResult}>
             <div className={cx('search')}>
                 <span className={cx('search-icon')}>
                     <SearchIcon />

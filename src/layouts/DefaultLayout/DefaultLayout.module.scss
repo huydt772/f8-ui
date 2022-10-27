@@ -5,8 +5,10 @@
 
 .container {
     display: flex;
+    margin-top: var(--header-height);
 }
 
 .content {
     flex: 1;
+    padding: 0 40px 0 20px;
 }
